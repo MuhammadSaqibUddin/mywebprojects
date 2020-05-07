@@ -1,0 +1,299 @@
+*{ margin: 0; padding: 0; box-sizing: border-box; 
+    font-family: 'Open Sans', sans-serif;}
+
+
+/* header{
+    position: relative;
+    z-index: 50;
+} */
+.top-main-div{
+    background-color: #316DC3;
+    text-align: center;
+}
+.social-icons{
+    margin: 10px 0 !important;    
+}
+.middle-txt{
+    padding-top: 8px;
+    margin-left: 10px;
+}
+.top-link-div{
+    margin: 8px 0 !important;
+}
+.top-main-div i{
+    color: #ffffff;
+    padding-right: 12px;
+}
+.top-links{
+    background-color: #f5f5f5 !important;
+    border-color: #006618;
+    font-size: 11px;
+    color: #427900;
+    padding: 4px 6px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 400;
+    border: 1px solid transparent;
+}
+a.top-links:hover{
+    text-decoration: none;
+    color: #427900;
+}
+
+ /* navbar css start */
+/* .sticky-top{
+     position: sticky;
+     top: 0;
+     z-index: 1020;
+ } */
+ .nav-main-div{
+     border-bottom: 1px solid #eee;
+ }
+.dropdown:hover>.dropdown-menu{
+    display: block;  
+}
+.dropdown-toggle::after {
+    border: none!important;
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f107"!important; /* the desired FontAwesome icon */
+    vertical-align: 0; /* to center vertically */
+}
+.navbar-nav > .nav-item > .nav-link{
+    padding:8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.navbar-nav > .nav-item.active > .nav-link, .navbar-nav > .nav-item:hover > .nav-link, .navbar-nav .nav-item:hover > .nav-link{
+    background-color: #316DC3;
+    color: #ffffff; 
+    border: 0px solid #316DC3; 
+    border-radius: 30px;   
+}
+.navbar-nav div.dropdown-menu {
+    font-size: 12px; 
+}
+.navbar-nav div.dropdown-menu a.dropdown-item {
+    background: none;
+    outline: none;
+    padding: 7px 25px 7px 22px;
+    text-decoration: none;
+}
+.navbar-nav div.dropdown-menu a.dropdown-item:hover{
+    background-color: #316DC3;
+    color: #ffffff;
+}
+ /* navbar css end */
+
+
+/* useful classes */
+.green-txt{
+    color: #427900;    
+}
+.font-600{
+    font-weight: 600;
+}
+.blue-txt{
+    color: #316DC3;
+}
+.merriweather-font{
+    font-family: 'Merriweather', serif;
+}
+.icon-div{
+    position: relative; 
+    max-width: 160px; 
+    margin: auto;
+}
+.icon-div::before {
+    content: "";
+    background: #427900;
+    height: 2px;
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    width: 36px;
+}
+.icon-div::after{
+    content: "";
+    background: #427900;
+    height: 2px;
+    left: 10px;
+    position: absolute;
+    top: 30px;
+    width: 36px;
+}
+.line::after{
+    content: "";
+    background: #427900;
+    bottom: -1px;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+
+p#news{
+    margin-top: 12px; 
+    background-color: #316DC3; 
+    color: white; 
+}
+
+/* intro section css */
+p#intro{
+    font-size: 14px; 
+    color: #666666; 
+    font-family: sans-serif; 
+    text-align: justify;
+}
+.intro-section{
+    background-color: #f7f8fa;
+    text-align: center;
+}
+
+
+/* counter section css */
+.counter-section{
+    background-color: rgba(36, 79, 242) !important;
+    margin: 80px 0px 60px;
+}
+.counter-section > div.container{
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.counter-section h2,.counter-section h5,.counter-section span{
+    font-family: 'Merriweather', serif;
+}
+.counter-section h5{
+    font-size: 14px;
+}
+.counter-section h2{
+ font-weight: 500;
+ font-size: 3rem !important;   
+}
+.counter-section span{
+    font-size: 18px;
+    color: #00FF00 !important;
+}
+
+/* services-section */
+.services-section > div.container{
+    padding-bottom: 60px;
+}
+ /* shadow boxes css */
+.shadow-main-div div.boxes-m-p{
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.16);
+}
+.boxes-m-p{
+    margin-bottom: 30px;
+    padding: 30px;
+}
+.shadow-main-div h4{
+    margin-top: 20px;
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    color: #316DC3;
+}
+.bg-white{
+    background-color: #ffffff !important;
+}
+
+/* mission section css */
+.mission-section > .container{
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+}
+.mission-section{
+    position: relative;
+}
+.mission-section h3{
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 6px;
+}
+.mission-section div.box{
+    margin-bottom: 20px !important;
+    padding: 18px !important;
+    border: 1px solid #eeeeee;
+    background-color: #f7f8fa;
+}
+.box h4{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.mission-section h4,.mission-section h3{
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #316DC3;
+}
+.box a{
+    margin-right: 30px;
+    padding: 0;
+}
+.box a:hover{
+    text-decoration: none;
+}
+
+/* gallery section css */
+.gallery-section{
+    margin-bottom: 150px;
+    padding-bottom: 50px;
+}
+.gallery-section div.gallery{
+    position: relative;
+    /* height: 300px; */
+    /* background-color: #00FF00; */
+}
+.gallery-section div.gallery div.img-div{
+    width: 20%!important;
+    padding: 1px!important;
+}
+
+/* footer css */
+footer>.container{
+    padding-top: 70px;
+    padding-bottom: 40px;
+    font-size: 14px;
+}
+
+footer h5{
+    color: #ffffff;
+    font-size: 15px;
+}
+footer a{
+    background-color: #316DC3;
+    color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    font-size: 13px;
+    height: 30px;
+    line-height: 30px;
+    margin: 2px 7px 2px 0;
+    width: 30px;
+    text-decoration: none;
+}
+footer a:hover{
+    color: #ffffff;
+    background-color: hsl(215, 60%, 50%);
+}
+
+
+.sidelink{
+    background: rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 12px;
+    padding: 2px;
+    right: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+.sidelink i{
+    color: #ffffff;
+    font-size: 42px;
+}
+.sidelink:hover{
+    background: rgba(0, 0, 0, 0.5);   
+}
