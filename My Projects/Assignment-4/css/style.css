@@ -1,0 +1,450 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 600;
+}
+
+/* top-bar css */
+.top-bar{
+    font-size: 13px;
+    background: #14bdee;}
+div.top-bar div.top-icon1, div.top-bar div.top-icon2, div.top-bar div.top-icon3{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+div.top-bar div.top-icon1{
+    background-color: #0707a5;
+}
+div.top-bar div.top-icon2{
+    background-color: #ffa500;
+}
+div.top-bar div.top-icon3{
+    background-color: #008000;
+}
+
+/* it is used for when screen is small, then add space b/w icons */
+@media only screen and (max-width: 768px) {
+    div.top-bar [class^="col-12"] {
+      margin-bottom: 10px;
+    }
+}
+
+/* navbar css */
+.navbar .navbar-nav .nav-item .nav-link{
+    padding-left: 10px;
+    margin-right: 15px;
+    font-weight: 600;
+}
+.dropdown:hover>.dropdown-menu{
+    display: block;  
+}
+.navbar-nav div.dropdown-menu a.dropdown-item:hover{
+    background-color: #14bdee;
+    color: #ffffff;
+}
+.navbar .navbar-nav .nav-item.active a,.navbar .nav-item .nav-link:hover{
+    color: #14bdee;
+    border: 1px solid #14bdee;
+}
+
+
+/* section1 css */
+.section1{
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.section1 h3{
+    font-weight: 500;
+}
+.section1 div.icon i{
+    font-size: 40px;
+    margin-top: 28px;
+}
+.section1 div.icon{
+    border-radius: 50%;
+    box-shadow: 3px 4px 12px #808080;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+.section1 div.row > div:nth-child(odd){
+    background-color: #fff;
+    color: #808080;
+}
+.section1 div.row > div:nth-child(even){
+    background-color: #14bdee;
+    color: #fff;
+}
+.section1 div.section1-div #icon1,.section1 div.section1-div #icon3{
+    background-color: #14bdee;
+}
+.section1 div.section1-div #icon2,.section1 div.section1-div #icon4{
+    background-color: #fff;
+}
+.section1 div.section1-div #icon1 i,.section1 div.section1-div #icon3 i{
+    color: #fff;
+}
+.section1 div.section1-div #icon2 i,.section1 div.section1-div #icon4 i{
+    color: #14bdee;
+}
+
+/* about section css */
+.about-section{
+    padding-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.about-section p{
+    line-height: 1.8em;
+}
+.about-section .paragraph1-div a{
+    text-decoration: none;
+    background-color: #14bdee;
+    color: #fff;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.about-section .paragraph1-div a:hover{
+    box-shadow: 2px 2px 5px 2px #808080;
+}
+@media only screen and (max-width: 992px) {
+    .about-section img {
+        width: 50% !important;
+        height: 80%;
+    }
+}
+
+/* courses section css */
+.courses-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.courses-section p{
+    line-height: 1.8em;
+}
+.courses-section div.course-img-div img{
+    width: 100%;
+    height: 250px;
+}
+.courses-section div.text a{
+    text-decoration: none;
+}
+
+/* counter-section css */
+.counter-section{
+    background-color: #14bdee;
+    color: #fff;
+    margin: 100px 0;
+    padding: 80px 0;
+}
+.counter-section i {
+    font-size: 80px;
+}
+.counter-section .row h1{
+    font-size: 30px;
+}
+.counter-section h1,h6{
+    font-weight: 500;
+}
+.counter-section div.row > [class^="col-12"]{
+    padding: 40px 0;
+    margin-bottom: 20px;
+    background-color: #fff;
+    color: #14bdee;
+    border-radius: 100px;
+    box-shadow: 4px 4px 3px 2px #808080;
+    
+}
+.counter-section div.d-flex{
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+
+/* testimonial css */
+.testimonial-section{
+    color: #fff;
+    margin-top: 150px;
+    margin-bottom: 80px;
+    padding: 50px 0;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/testimonial-bg.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.testimonial-section .carousel-inner .carousel-item i.fa-quote-left{
+    font-size: 50px;
+    color: #000000;
+    position: absolute;
+    z-index: -1;
+    top: -2px;
+    opacity: 0.1;
+}
+.testimonial-section .carousel-inner .carousel-item i.fa-user-circle{
+    font-size: 100px;
+    color: #14bdee;
+}
+
+/* upcomming event section css */
+.event-section{
+    margin: 150px 0;
+    padding: 50px 0;
+    background-color: #14bdee;
+}
+.event-section div.heading-div h3{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eeeeee;    
+}
+.event-section div.heading-div h3::after{
+    content: "";
+    background: #14bdee;
+    height: 2px;
+    left: 20px;
+    position: absolute;
+    top: 52px;
+    width: 60px;
+}
+.event-section .icon-div{
+    border-radius: 50%;
+    background-color: #14bdee;
+    color: #fff;
+    padding: 25px;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    text-align: center;
+}
+.event-section .icon-div i{
+    font-size: 30px;
+}
+.event-section div.d-flex{
+    flex-direction: row;
+    justify-content: center;    
+}
+
+/* gallery section css  */
+.gallery-section{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.gallery-section img{
+    width: 100%;
+    height: 100%;
+}
+.gallery-section div.row>div{
+    margin-bottom: 20px;
+    padding: 0 3px;
+}
+
+/* footer css */
+footer{
+    background-color: #14bdee;
+    font-weight: 500;
+}
+footer p{
+    color: #fff;
+}
+footer .container2 a,.footer-copyright a{
+    color: #fff;
+}
+footer div.social-media-div a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* right side link btn */
+a.sidelink{
+    background: rgba(0, 0, 0, 0.1);
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 12px;
+    padding: 4px;
+    right: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+a.sidelink i{
+    color: #ffffff;
+    font-size: 32px;
+}
+a.sidelink:hover{
+    background: rgba(0, 0, 0, 0.5);   
+}
+/* **********end index.html page css************ */
+
+
+/* short courses page css start*/
+
+/* this sec-1 used for both short and long courses page */
+section.short-crs-sec-1,section.long-crs-sec-1{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    padding: 30px 0;
+    background-color: #14bdee;
+    color: #fff;
+    letter-spacing: 0.2em;
+}
+/* **************** */
+section.short-crs-sec-2{
+    margin-bottom: 100px; 
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+section.short-crs-sec-2 .duration-div span{
+    font-size: 13px;
+}
+section.short-crs-sec-2 .card{
+    box-shadow: 3px 5px 6px #808080;
+}
+
+/* short courses page css end*/
+
+
+/* long courses page css start*/
+
+/* software engi and web development section(sec-2 & sec-3) css */
+section.long-crs-sec-2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 0;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/courses-imgs/software-engineers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.long-crs-sec-3 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 0;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/courses-imgs/asp.net.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.long-crs-sec-2 .main-heading-div h2,section.long-crs-sec-3 .main-heading-div h2,section.long-crs-sec-4 .main-heading-div h2{
+    background-color: #fff;
+    color: #14bdee;
+    padding: 10px 0;
+    letter-spacing: 0.1em;
+    border-radius: 20px;
+}
+section.long-crs-sec-2 .main-heading-div p,section.long-crs-sec-3 .main-heading-div p,section.long-crs-sec-4 .main-heading-div p{
+    color: #fff;
+    padding-top: 5px;
+}
+.long-crs-sec-2 .s1-row,.long-crs-sec-2 .s2-row,.long-crs-sec-3 .s1-row,.long-crs-sec-3 .s2-row,.long-crs-sec-4 .s1-row{
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    box-shadow: 3px 4px 4px 6px #fff;
+}
+section.long-crs-sec-2 ul.fa-ul,section.long-crs-sec-3 ul.fa-ul,section.long-crs-sec-4 ul.fa-ul{
+    margin-left: 32px;
+}
+section.long-crs-sec-2 ul.fa-ul span.fa-li,section.long-crs-sec-3 ul.fa-ul span.fa-li,section.long-crs-sec-4 ul.fa-ul span.fa-li{
+    padding-right: 15px;
+}
+
+/* web development section extra css */
+section.long-crs-sec-4 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 30px 0;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../images/courses-imgs/Web-Development.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* long courses page css end*/
+
+
+/* about us page css start */
+.about-sec-1{
+    padding-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.about-sec-1 p{
+    line-height: 1.8em;
+}
+section.about-sec-2 {
+    margin-top: 50px;
+    margin-bottom: 80px;
+    padding: 30px 0;
+}
+section.about-sec-2 h3::after{
+    content: "";
+    background: #14bdee;
+    height: 2px;
+    left: 25px;
+    position: absolute;
+    top: 60px;
+    width: 60px;
+}
+section.about-sec-2 div.row > div.col-12{
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px 5px #eeeeee;
+}
+section.about-sec-3{
+    margin-bottom: 100px;
+}
+@media only screen and (max-width: 992px) {
+    .about-sec-1 img {
+        width: 60% !important;
+        height: 80%;
+    }
+}
+/* about us page css end */
+
+
+/* contact us page css start */
+.form-detail-section div.contact-detail-col a{
+    color: #fff;
+    background-color: #14bdee;
+    padding: 10px 15px;
+    border-radius: 50%;
+    box-shadow: 3px 5px 5px #808080;
+}
+.form-detail-section div.card-body button.btn{
+    background-color: #14bdee; 
+    font-size: 15px; 
+    color: #fff;
+}
+.form-detail-section div.card-body button.btn:hover{
+    box-shadow: 3px 3px 8px 12px #eceaea;
+}
+.form-detail-section div.card-body form i.fa {
+    top: 12px;
+    left: 22px;
+    color: #14bdee;
+}
+.form-detail-section div.card-body input{
+    padding-left: 30px;
+}
+/* contact us page css end */
+
+
+/* gallery page css start */
+
+section.gallery-sec a{
+    text-decoration: none;
+    color: #808080;
+}
+
+/* gallery page css end */
+
